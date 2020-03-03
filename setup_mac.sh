@@ -55,6 +55,7 @@ brew cask install keybase
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install lsd
+brew install the_silver_searcher
 
 # Fonts for LSD
 brew tap homebrew/cask-fonts
