@@ -238,6 +238,10 @@ endif
 
 
 " Use deoplete
+"
+let g:python_host_prog = "/usr/bin/python"
+let g:python3_host_prog = '/usr/local/bin/python3.7'
+
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni_patterns = {}
 
@@ -426,7 +430,5 @@ if has('nvim')
 else
     let s:editor_root=expand("~/.vim")
 endif
-
-let g:python3_host_prog = '/Users/tonychen/.pyenv/versions/neovim3/bin/python'
 
 " vim:foldmethod=marker:foldlevel=0
