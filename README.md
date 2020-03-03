@@ -14,3 +14,9 @@ chmod +x setup_mac.sh
 cmhod+x setup.sh
 ./estup.sh
 ```
+
+## Vim
+```
+:PlugInstall
+:checkhealth
+```
