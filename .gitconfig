@@ -1,0 +1,22 @@
+[user]
+	email = tonychenkt@gmail.com
+	name = chilldude
+	signingkey = 1FE19A26FFFF0C6E
+[commit]
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	cp = cherry-pick
+	sur = submodule update --init --recursive --jobs=7
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lo = "!git --no-pager log --graph --decorate --pretty=oneline --abbrev-commit --all -n10"
+[commit]
+    gpgsign = true
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[merge]
+	tool = fugitive
+[init]
+	templatedir = ~/.git_template/template

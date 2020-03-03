@@ -1,2 +1,2 @@
-# dot
-environment setup for puter
+dotfiles
+========
