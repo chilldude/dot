@@ -68,3 +68,7 @@ if [ -f '/Users/tonychen/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then 
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$(python -m site --user-base)/bin:${PATH}"
+
+# Android
+export PATH=/Users/tkc/Library/Android/sdk/platform-tools:$PATH
+export PATH=/Users/tkc/Library/Android/sdk/tools:$PATH
