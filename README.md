@@ -12,7 +12,7 @@ chmod +x setup_mac.sh
 ## LINUX
 ```
 cmhod+x setup.sh
-./estup.sh
+./setup.sh
 ```
 
 ## Vim
