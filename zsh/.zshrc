@@ -56,7 +56,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 alias goland='/usr/local/bin/goland'
 
 # DIRENV
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tonychen/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tonychen/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -69,6 +69,52 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$(python -m site --user-base)/bin:${PATH}"
 
-# Android
+###########
+# Android #
+###########
+export ANDROID_HOME="/Users/tkc/Library/Android/sdk"
+export ANDROID_NDK="/opt/android_ndk/android-ndk-r17c"
+export ANDROID_NDK_HOME="/opt/android_ndk/android-ndk-r17c"
+export ANDROID_NDK_REPOSITORY="/opt/android_ndk"
+export PATH=${PATH}:/opt/gradle/gradle-4.10.3/bin
 export PATH=/Users/tkc/Library/Android/sdk/platform-tools:$PATH
-export PATH=/Users/tkc/Library/Android/sdk/tools:$PATH
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+####################
+# Spaceship Prompt #
+####################
+SPACESHIP_PROMPT_ORDER=(
+  # time        # Time stamps section (Disabled)
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  # hg            # Mercurial section (hg_branch  + hg_status)
+  package     # Package version (Disabled)
+  node          # Node.js section
+  ruby          # Ruby section
+  elixir        # Elixir section
+  xcode       # Xcode section (Disabled)
+  swift         # Swift section
+  golang        # Go section
+  php           # PHP section
+  rust          # Rust section
+  haskell       # Haskell Stack section
+  julia       # Julia section (Disabled)
+  docker      # Docker section (Disabled)
+  aws           # Amazon Web Services section
+  venv          # virtualenv section
+  conda         # conda virtualenv section
+  pyenv         # Pyenv section
+  dotnet        # .NET section
+  ember       # Ember.js section (Disabled)
+  # kubecontext   # Kubectl context section
+  terraform     # Terraform workspace section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  vi_mode     # Vi-mode indicator (Disabled)
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
