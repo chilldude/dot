@@ -56,7 +56,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 alias goland='/usr/local/bin/goland'
 
 # DIRENV
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tonychen/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tonychen/Downloads/google-cloud-sdk/path.zsh.inc'; fi
