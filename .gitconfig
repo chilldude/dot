@@ -1,6 +1,7 @@
 [user]
 	email = tonychenkt@gmail.com
 	name = chilldude
+	signingkey = C8097D08DDA03F0E
 [commit]
 [alias]
 	st = status
