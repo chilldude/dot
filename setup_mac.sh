@@ -13,8 +13,6 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ln -sf $dir/.bash_profile ~/.bash_profile
 ln -sf $dir/.bash_aliases ~/.bash_aliases
 ln -sf $dir/.gitconfig ~/.gitconfig
-mkdir -p ~/.config/terminator/
-ln -sf $dir/terminator/config ~/.config/terminator/
 
 # install brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
