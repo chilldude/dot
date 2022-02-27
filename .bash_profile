@@ -65,7 +65,7 @@ function pb() {
 # ALIASES #
 ###########
 
-if [ -f ~/.bash_aliases ]; then
+if [ -f ~/.aliases ]; then
     . ~/.bash_aliases
 fi
 

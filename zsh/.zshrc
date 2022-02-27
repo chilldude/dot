@@ -13,7 +13,7 @@ ZDOT_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 export EDITOR=nvim
 
 # source aliases
-source ~/.bash_aliases
+source ~/.aliases
 
 # up arrow readline completion
 echo '# arrow up

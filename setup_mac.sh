@@ -11,7 +11,7 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # link up git dotfiles to home dotfiles
 ln -sf $dir/.bash_profile ~/.bash_profile
-ln -sf $dir/.bash_aliases ~/.bash_aliases
+ln -sf $dir/.aliases ~/.aliases
 ln -sf $dir/.gitconfig ~/.gitconfig
 
 # install brew
@@ -21,7 +21,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 if ! brew install neovim/neovim/neovim
     then echo "neovim depends on gperf"; fi
 
-brew install python
 pip3 install --user neovim
 sudo gem install neovim
 
@@ -40,21 +39,26 @@ ln -sf $dir/zsh/.zshrc ~/.zshrc
 
 # install antigen
 # https://github.com/zsh-users/antigen
-curl -L git.io/antigen > $dir/zsh/antigen/antigen.zsh
+# curl -L git.io/antigen > $dir/zsh/antigen/antigen.zsh
 
 # nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # command line utilities
-# brew install git
 brew install fasd
 brew install gpg
-brew cask install keybase
+
+# fzf is a general-purpose command-line fuzzy finder
 brew install fzf
+# To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
+
 brew install lsd
 brew install the_silver_searcher
 
 # Fonts for LSD
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install font-hack-nerd-font --cask
+
+# Note: after patching fonts, configure Non-ASCII font in iTerm
+# iTerm2 > Preferences > Profiles > Text > Non-ASCII-Font > Change Font
