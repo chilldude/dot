@@ -1,8 +1,9 @@
 [user]
-	email = tonychenkt@gmail.com
+	signingkey = E532A9F4EC7C4BAB
 	name = chilldude
-	signingkey = C8097D08DDA03F0E
+	email = tonychenkt@gmail.com
 [commit]
+	gpgsign = true
 [alias]
 	st = status
 	ci = commit
